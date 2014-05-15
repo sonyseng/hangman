@@ -50,6 +50,7 @@ $(function() {
 		if (game.state === 1) {
 			message.text('You won!');
 			gamesWon++;
+			gamesPlayed++;
 		} else if (game.state === -1) {
 			message.text('You lost!');
 			gamesPlayed++;
