@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -27,8 +26,8 @@ import com.sonyseng.model.Game;
 // Notes: Synchronization on session mutations should be enforced. Our shared store is the session object. 
 // Each user gets their own session object but each user may make many concurrent reads/writes for themselves.
 
-@Controller
 @SuppressWarnings("unchecked")
+@Controller
 public class GameController {
     // Shared only use it as a read only variable
     private List<String> randomWordList;
